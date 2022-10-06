@@ -7,6 +7,8 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 })
 export class AuthService {
 
+  public userActual: any;
+
   constructor(
     private auth: Auth
   ) { }
@@ -18,6 +20,8 @@ export class AuthService {
         email,
         password
        );
+       this.userActual = this.auth.currentUser;
+       console.log(this.userActual.email)
        return user;
     } catch (error) {
       return null;
