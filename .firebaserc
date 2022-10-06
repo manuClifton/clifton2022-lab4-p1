@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "parcial1lab4": {
+      "hosting": {
+        "clifton2022-lab4-p1": [
+          "parcial1lab4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "parcial1lab4"
+  }
+}

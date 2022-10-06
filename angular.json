@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "clifton2022-lab4-p1:build:production",
+            "firebaseProject": "parcial1lab4",
+            "firebaseHostingSite": "parcial1lab4"
+          }
         }
       }
     }
